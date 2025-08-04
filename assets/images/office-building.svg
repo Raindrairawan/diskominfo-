@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <!-- Sky Background -->
+  <rect width="800" height="450" fill="#e8f4f8" />
+  
+  <!-- Ground -->
+  <rect x="0" y="350" width="800" height="100" fill="#8bc34a" />
+  
+  <!-- Decorative Elements - Clouds -->
+  <ellipse cx="100" cy="80" rx="50" ry="30" fill="white" opacity="0.8" />
+  <ellipse cx="130" cy="90" rx="40" ry="25" fill="white" opacity="0.8" />
+  <ellipse cx="160" cy="75" rx="45" ry="20" fill="white" opacity="0.8" />
+  
+  <ellipse cx="650" cy="60" rx="60" ry="30" fill="white" opacity="0.8" />
+  <ellipse cx="690" cy="70" rx="50" ry="25" fill="white" opacity="0.8" />
+  <ellipse cx="720" cy="55" rx="40" ry="20" fill="white" opacity="0.8" />
+  
+  <!-- Sun -->
+  <circle cx="700" cy="100" r="40" fill="#ffeb3b" />
+  <circle cx="700" cy="100" r="30" fill="#fdd835" />
+  
+  <!-- Building Base -->
+  <rect x="200" y="150" width="400" height="200" fill="#1565c0" />
+  
+  <!-- Building Roof (Traditional Malay Style) -->
+  <polygon points="180,150 400,80 620,150" fill="#0d47a1" />
+  
+  <!-- Building Entrance -->
+  <rect x="350" y="280" width="100" height="70" fill="#0d47a1" />
+  <rect x="380" y="300" width="40" height="50" fill="#bbdefb" />
+  
+  <!-- Windows - Left Side -->
+  <rect x="230" y="180" width="40" height="40" fill="#bbdefb" />
+  <rect x="290" y="180" width="40" height="40" fill="#bbdefb" />
+  <rect x="230" y="240" width="40" height="40" fill="#bbdefb" />
+  <rect x="290" y="240" width="40" height="40" fill="#bbdefb" />
+  
+  <!-- Windows - Right Side -->
+  <rect x="470" y="180" width="40" height="40" fill="#bbdefb" />
+  <rect x="530" y="180" width="40" height="40" fill="#bbdefb" />
+  <rect x="470" y="240" width="40" height="40" fill="#bbdefb" />
+  <rect x="530" y="240" width="40" height="40" fill="#bbdefb" />
+  
+  <!-- Pillars -->
+  <rect x="200" y="150" width="15" height="200" fill="#0d47a1" />
+  <rect x="585" y="150" width="15" height="200" fill="#0d47a1" />
+  
+  <!-- Front Garden -->
+  <!-- Pathway -->
+  <rect x="380" y="350" width="40" height="50" fill="#e0e0e0" />
+  
+  <!-- Bushes -->
+  <ellipse cx="250" cy="370" rx="30" ry="20" fill="#388e3c" />
+  <ellipse cx="550" cy="370" rx="30" ry="20" fill="#388e3c" />
+  <ellipse cx="320" cy="380" rx="25" ry="15" fill="#388e3c" />
+  <ellipse cx="480" cy="380" rx="25" ry="15" fill="#388e3c" />
+  
+  <!-- Flowers -->
+  <circle cx="250" cy="360" r="5" fill="#e91e63" />
+  <circle cx="260" cy="365" r="5" fill="#f44336" />
+  <circle cx="240" cy="365" r="5" fill="#9c27b0" />
+  
+  <circle cx="550" cy="360" r="5" fill="#e91e63" />
+  <circle cx="560" cy="365" r="5" fill="#f44336" />
+  <circle cx="540" cy="365" r="5" fill="#9c27b0" />
+  
+  <!-- Flagpole -->
+  <rect x="150" y="150" width="5" height="200" fill="#757575" />
+  <rect x="155" y="150" width="30" height="20" fill="#ff0000" />
+  
+  <!-- DISKOMINFO Sign -->
+  <rect x="300" y="120" width="200" height="30" fill="#0d47a1" />
+  <text x="400" y="142" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">DISKOMINFO KABUPATEN SIAK</text>
+</svg>

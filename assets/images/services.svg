@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa" />
+  
+  <!-- Grid Pattern -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e9ecef" stroke-width="1" />
+  </pattern>
+  <rect width="800" height="450" fill="url(#grid)" />
+  
+  <!-- Decorative Elements -->
+  <circle cx="150" cy="150" r="100" fill="#16a085" opacity="0.1" />
+  <circle cx="650" cy="300" r="120" fill="#1a1a2e" opacity="0.1" />
+  
+  <!-- Service Grid -->
+  <!-- Row 1 -->
+  <g transform="translate(200, 150)">
+    <!-- E-Serti Icon -->
+    <circle cx="0" cy="0" r="50" fill="#1a1a2e" />
+    <path d="M -20,-15 L 20,-15 L 20,15 L -20,15 Z" fill="none" stroke="#16a085" stroke-width="3" />
+    <path d="M -10,-5 L 10,-5 M -10,0 L 10,0 M -10,5 L 10,5" stroke="#16a085" stroke-width="2" />
+    <circle cx="0" cy="-25" r="10" fill="#16a085" />
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1a1a2e" text-anchor="middle">E-Serti</text>
+  </g>
+  
+  <g transform="translate(400, 150)">
+    <!-- SiMobil Icon -->
+    <circle cx="0" cy="0" r="50" fill="#1a1a2e" />
+    <path d="M -30,0 L 30,0 L 25,-15 L -25,-15 Z" fill="none" stroke="#16a085" stroke-width="3" />
+    <circle cx="-15" cy="10" r="8" fill="none" stroke="#16a085" stroke-width="2" />
+    <circle cx="15" cy="10" r="8" fill="none" stroke="#16a085" stroke-width="2" />
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1a1a2e" text-anchor="middle">SiMobil</text>
+  </g>
+  
+  <g transform="translate(600, 150)">
+    <!-- SiMari Icon -->
+    <circle cx="0" cy="0" r="50" fill="#1a1a2e" />
+    <circle cx="-15" cy="-5" r="12" fill="none" stroke="#16a085" stroke-width="3" />
+    <circle cx="15" cy="-5" r="12" fill="none" stroke="#16a085" stroke-width="3" />
+    <path d="M -15,7 C -15,20 15,20 15,7" fill="none" stroke="#16a085" stroke-width="3" />
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1a1a2e" text-anchor="middle">SiMari</text>
+  </g>
+  
+  <!-- Row 2 -->
+  <g transform="translate(200, 300)">
+    <!-- Sihonor Icon -->
+    <circle cx="0" cy="0" r="50" fill="#1a1a2e" />
+    <circle cx="0" cy="-15" r="12" fill="none" stroke="#16a085" stroke-width="3" />
+    <path d="M -20,10 C -20,25 20,25 20,10" fill="none" stroke="#16a085" stroke-width="3" />
+    <path d="M -10,-5 L 10,-5" stroke="#16a085" stroke-width="3" />
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1a1a2e" text-anchor="middle">Sihonor</text>
+  </g>
+  
+  <g transform="translate(400, 300)">
+    <!-- Simeting Icon -->
+    <circle cx="0" cy="0" r="50" fill="#1a1a2e" />
+    <circle cx="-20" cy="-20" r="8" fill="#16a085" />
+    <circle cx="20" cy="-20" r="8" fill="#16a085" />
+    <circle cx="-20" cy="20" r="8" fill="#16a085" />
+    <circle cx="20" cy="20" r="8" fill="#16a085" />
+    <path d="M -20,-20 L 20,-20 L 20,20 L -20,20 L -20,-20 M -20,-20 L 20,20 M 20,-20 L -20,20" fill="none" stroke="#16a085" stroke-width="2" />
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1a1a2e" text-anchor="middle">Simeting</text>
+  </g>
+  
+  <g transform="translate(600, 300)">
+    <!-- Placeholder Icon -->
+    <circle cx="0" cy="0" r="50" fill="#1a1a2e" opacity="0.5" />
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="30" fill="#16a085" text-anchor="middle">+</text>
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1a1a2e" text-anchor="middle">Coming Soon</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1a1a2e" text-anchor="middle">Layanan SiPeluk</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="16" fill="#495057" text-anchor="middle">Solusi Digital untuk Masyarakat Kabupaten Siak</text>
+</svg>

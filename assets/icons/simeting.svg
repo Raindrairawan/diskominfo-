@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#1a1a2e" />
+  
+  <!-- Network Icon -->
+  <!-- Central Node -->
+  <circle cx="100" cy="100" r="15" fill="#16a085" />
+  
+  <!-- Outer Nodes -->
+  <circle cx="50" cy="50" r="12" fill="#16a085" />
+  <circle cx="150" cy="50" r="12" fill="#16a085" />
+  <circle cx="50" cy="150" r="12" fill="#16a085" />
+  <circle cx="150" cy="150" r="12" fill="#16a085" />
+  
+  <!-- Secondary Nodes -->
+  <circle cx="75" cy="75" r="8" fill="#16a085" opacity="0.8" />
+  <circle cx="125" cy="75" r="8" fill="#16a085" opacity="0.8" />
+  <circle cx="75" cy="125" r="8" fill="#16a085" opacity="0.8" />
+  <circle cx="125" cy="125" r="8" fill="#16a085" opacity="0.8" />
+  
+  <!-- Connection Lines -->
+  <!-- Primary Connections -->
+  <line x1="100" y1="100" x2="50" y2="50" stroke="#16a085" stroke-width="2" />
+  <line x1="100" y1="100" x2="150" y2="50" stroke="#16a085" stroke-width="2" />
+  <line x1="100" y1="100" x2="50" y2="150" stroke="#16a085" stroke-width="2" />
+  <line x1="100" y1="100" x2="150" y2="150" stroke="#16a085" stroke-width="2" />
+  
+  <!-- Secondary Connections -->
+  <line x1="100" y1="100" x2="75" y2="75" stroke="#16a085" stroke-width="2" stroke-dasharray="3,3" />
+  <line x1="100" y1="100" x2="125" y2="75" stroke="#16a085" stroke-width="2" stroke-dasharray="3,3" />
+  <line x1="100" y1="100" x2="75" y2="125" stroke="#16a085" stroke-width="2" stroke-dasharray="3,3" />
+  <line x1="100" y1="100" x2="125" y2="125" stroke="#16a085" stroke-width="2" stroke-dasharray="3,3" />
+  
+  <!-- Tertiary Connections -->
+  <line x1="50" y1="50" x2="75" y2="75" stroke="#16a085" stroke-width="1" />
+  <line x1="150" y1="50" x2="125" y2="75" stroke="#16a085" stroke-width="1" />
+  <line x1="50" y1="150" x2="75" y2="125" stroke="#16a085" stroke-width="1" />
+  <line x1="150" y1="150" x2="125" y2="125" stroke="#16a085" stroke-width="1" />
+  
+  <!-- Cross Connections -->
+  <line x1="50" y1="50" x2="150" y2="150" stroke="#16a085" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="150" y1="50" x2="50" y2="150" stroke="#16a085" stroke-width="1" stroke-dasharray="5,5" />
+  
+  <!-- Data Transfer Animation -->
+  <circle cx="75" cy="75" r="3" fill="#ffffff">
+    <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="125" cy="75" r="3" fill="#ffffff">
+    <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" begin="0.5s" />
+  </circle>
+  <circle cx="75" cy="125" r="3" fill="#ffffff">
+    <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" begin="1s" />
+  </circle>
+  <circle cx="125" cy="125" r="3" fill="#ffffff">
+    <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" begin="1.5s" />
+  </circle>
+</svg>

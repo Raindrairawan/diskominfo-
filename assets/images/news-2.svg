@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa" />
+  
+  <!-- Grid Pattern -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e9ecef" stroke-width="1" />
+  </pattern>
+  <rect width="800" height="450" fill="url(#grid)" />
+  
+  <!-- Decorative Elements -->
+  <circle cx="200" cy="350" r="120" fill="#16a085" opacity="0.1" />
+  <circle cx="600" cy="100" r="80" fill="#1a1a2e" opacity="0.1" />
+  
+  <!-- WiFi Icon -->
+  <g transform="translate(400, 180) scale(2)">
+    <path d="M 0,-25 C 30,-25 30,-25 30,0 C 30,25 30,25 0,25 C -30,25 -30,25 -30,0 C -30,-25 -30,-25 0,-25 Z" fill="none" stroke="#16a085" stroke-width="2" />
+    <path d="M 0,-5 C 8,-5 8,-5 8,0 C 8,5 8,5 0,5 C -8,5 -8,5 -8,0 C -8,-5 -8,-5 0,-5 Z" fill="#16a085" />
+    <path d="M 0,-15 C 15,-15 15,-15 15,0 M 0,-15 C -15,-15 -15,-15 -15,0" fill="none" stroke="#16a085" stroke-width="2" stroke-linecap="round" />
+    <path d="M 0,-20 C 20,-20 20,-20 20,0 M 0,-20 C -20,-20 -20,-20 -20,0" fill="none" stroke="#16a085" stroke-width="2" stroke-linecap="round" />
+  </g>
+  
+  <!-- Text Placeholder -->
+  <text x="400" y="310" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#495057" text-anchor="middle">YAKIN WI-FI GRATIS ITU</text>
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#495057" text-anchor="middle">BENAR-BENAR GRATIS?</text>
+  
+  <!-- Question Mark -->
+  <text x="700" y="340" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="#16a085">?</text>
+  
+  <!-- DISKOMINFO Logo -->
+  <g transform="translate(50, 50) scale(0.3)">
+    <!-- Background Circle -->
+    <circle cx="100" cy="100" r="90" fill="#1a1a2e" />
+    
+    <!-- Outer Ring -->
+    <circle cx="100" cy="100" r="85" fill="none" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Central Globe/Network Icon -->
+    <circle cx="100" cy="100" r="30" fill="none" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Latitude Lines -->
+    <ellipse cx="100" cy="100" rx="30" ry="10" fill="none" stroke="#16a085" stroke-width="1.5" />
+    <ellipse cx="100" cy="100" rx="30" ry="20" fill="none" stroke="#16a085" stroke-width="1.5" />
+    
+    <!-- Longitude Lines -->
+    <path d="M100,70 C115,85 115,115 100,130 C85,115 85,85 100,70" fill="none" stroke="#16a085" stroke-width="1.5" />
+    <path d="M70,100 C85,85 115,85 130,100 C115,115 85,115 70,100" fill="none" stroke="#16a085" stroke-width="1.5" />
+  </g>
+  
+  <!-- Date -->
+  <text x="50" y="400" font-family="Arial, sans-serif" font-size="16" fill="#6c757d">10 Juni 2025</text>
+</svg>

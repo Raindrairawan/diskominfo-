@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#1a1a2e" />
+  
+  <!-- First Person -->
+  <g transform="translate(70, 100)">
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="15" fill="none" stroke="#16a085" stroke-width="4" />
+    
+    <!-- Body -->
+    <path d="M 0,-15 L 0,20" stroke="#16a085" stroke-width="4" />
+    
+    <!-- Arms -->
+    <path d="M 0,-5 L -20,10" stroke="#16a085" stroke-width="4" />
+    <path d="M 0,-5 L 15,0" stroke="#16a085" stroke-width="4" />
+    
+    <!-- Legs -->
+    <path d="M 0,20 L -15,45" stroke="#16a085" stroke-width="4" />
+    <path d="M 0,20 L 15,45" stroke="#16a085" stroke-width="4" />
+  </g>
+  
+  <!-- Second Person -->
+  <g transform="translate(130, 100)">
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="15" fill="none" stroke="#16a085" stroke-width="4" />
+    
+    <!-- Body -->
+    <path d="M 0,-15 L 0,20" stroke="#16a085" stroke-width="4" />
+    
+    <!-- Arms -->
+    <path d="M 0,-5 L -15,0" stroke="#16a085" stroke-width="4" />
+    <path d="M 0,-5 L 20,10" stroke="#16a085" stroke-width="4" />
+    
+    <!-- Legs -->
+    <path d="M 0,20 L -15,45" stroke="#16a085" stroke-width="4" />
+    <path d="M 0,20 L 15,45" stroke="#16a085" stroke-width="4" />
+  </g>
+  
+  <!-- Connecting Hands -->
+  <path d="M 85,95 L 115,95" stroke="#16a085" stroke-width="4" />
+  
+  <!-- Digital Elements -->
+  <circle cx="70" cy="50" r="3" fill="#ffffff" />
+  <circle cx="130" cy="50" r="3" fill="#ffffff" />
+  <circle cx="100" cy="40" r="3" fill="#ffffff" />
+  <circle cx="100" cy="150" r="3" fill="#ffffff" />
+  
+  <!-- Connection Lines -->
+  <path d="M 70,50 L 100,40 L 130,50" fill="none" stroke="#16a085" stroke-width="1" stroke-dasharray="3,3" />
+</svg>

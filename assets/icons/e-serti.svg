@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#1a1a2e" />
+  
+  <!-- Certificate Shape -->
+  <rect x="40" y="60" width="120" height="80" rx="5" fill="none" stroke="#16a085" stroke-width="4" />
+  
+  <!-- Certificate Lines -->
+  <line x1="60" y1="80" x2="140" y2="80" stroke="#16a085" stroke-width="2" />
+  <line x1="60" y1="100" x2="140" y2="100" stroke="#16a085" stroke-width="2" />
+  <line x1="60" y1="120" x2="140" y2="120" stroke="#16a085" stroke-width="2" />
+  
+  <!-- Lightbulb Icon -->
+  <circle cx="100" cy="40" r="15" fill="#16a085" />
+  
+  <!-- Light Rays -->
+  <line x1="100" y1="15" x2="100" y2="5" stroke="#16a085" stroke-width="3" />
+  <line x1="85" y1="20" x2="75" y2="10" stroke="#16a085" stroke-width="3" />
+  <line x1="75" y1="35" x2="65" y2="30" stroke="#16a085" stroke-width="3" />
+  <line x1="115" y1="20" x2="125" y2="10" stroke="#16a085" stroke-width="3" />
+  <line x1="125" y1="35" x2="135" y2="30" stroke="#16a085" stroke-width="3" />
+  
+  <!-- Seal/Badge -->
+  <circle cx="140" cy="140" r="20" fill="#16a085" opacity="0.8" />
+  <circle cx="140" cy="140" r="15" fill="none" stroke="#ffffff" stroke-width="2" />
+  <path d="M 130,140 L 137,147 L 150,134" fill="none" stroke="#ffffff" stroke-width="2" />
+  
+  <!-- Digital Elements -->
+  <circle cx="40" cy="60" r="3" fill="#ffffff" />
+  <circle cx="160" cy="60" r="3" fill="#ffffff" />
+  <circle cx="40" cy="140" r="3" fill="#ffffff" />
+  <circle cx="100" cy="150" r="3" fill="#ffffff" />
+</svg>

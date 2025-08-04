@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa" />
+  
+  <!-- Grid Pattern -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e9ecef" stroke-width="1" />
+  </pattern>
+  <rect width="800" height="450" fill="url(#grid)" />
+  
+  <!-- Decorative Elements -->
+  <circle cx="150" cy="150" r="100" fill="#16a085" opacity="0.1" />
+  <circle cx="650" cy="300" r="120" fill="#1a1a2e" opacity="0.1" />
+  
+  <!-- Team Members Silhouettes -->
+  <!-- Center Person (Leader) -->
+  <g transform="translate(400, 225)">
+    <!-- Head -->
+    <circle cx="0" cy="-60" r="30" fill="#1a1a2e" />
+    <!-- Body -->
+    <path d="M 0,-30 L 0,30 M -30,0 L 30,0" stroke="#1a1a2e" stroke-width="10" stroke-linecap="round" />
+    <!-- Arms -->
+    <path d="M -30,0 L -60,20 M 30,0 L 60,20" stroke="#1a1a2e" stroke-width="8" stroke-linecap="round" />
+    <!-- Legs -->
+    <path d="M 0,30 L -20,80 M 0,30 L 20,80" stroke="#1a1a2e" stroke-width="8" stroke-linecap="round" />
+  </g>
+  
+  <!-- Left Person -->
+  <g transform="translate(250, 225) scale(0.8)">
+    <!-- Head -->
+    <circle cx="0" cy="-60" r="30" fill="#16a085" />
+    <!-- Body -->
+    <path d="M 0,-30 L 0,30 M -30,0 L 30,0" stroke="#16a085" stroke-width="10" stroke-linecap="round" />
+    <!-- Arms -->
+    <path d="M -30,0 L -60,20 M 30,0 L 60,20" stroke="#16a085" stroke-width="8" stroke-linecap="round" />
+    <!-- Legs -->
+    <path d="M 0,30 L -20,80 M 0,30 L 20,80" stroke="#16a085" stroke-width="8" stroke-linecap="round" />
+  </g>
+  
+  <!-- Right Person -->
+  <g transform="translate(550, 225) scale(0.8)">
+    <!-- Head -->
+    <circle cx="0" cy="-60" r="30" fill="#16a085" />
+    <!-- Body -->
+    <path d="M 0,-30 L 0,30 M -30,0 L 30,0" stroke="#16a085" stroke-width="10" stroke-linecap="round" />
+    <!-- Arms -->
+    <path d="M -30,0 L -60,20 M 30,0 L 60,20" stroke="#16a085" stroke-width="8" stroke-linecap="round" />
+    <!-- Legs -->
+    <path d="M 0,30 L -20,80 M 0,30 L 20,80" stroke="#16a085" stroke-width="8" stroke-linecap="round" />
+  </g>
+  
+  <!-- Far Left Person -->
+  <g transform="translate(120, 225) scale(0.7)">
+    <!-- Head -->
+    <circle cx="0" cy="-60" r="30" fill="#6c757d" />
+    <!-- Body -->
+    <path d="M 0,-30 L 0,30 M -30,0 L 30,0" stroke="#6c757d" stroke-width="10" stroke-linecap="round" />
+    <!-- Arms -->
+    <path d="M -30,0 L -60,20 M 30,0 L 60,20" stroke="#6c757d" stroke-width="8" stroke-linecap="round" />
+    <!-- Legs -->
+    <path d="M 0,30 L -20,80 M 0,30 L 20,80" stroke="#6c757d" stroke-width="8" stroke-linecap="round" />
+  </g>
+  
+  <!-- Far Right Person -->
+  <g transform="translate(680, 225) scale(0.7)">
+    <!-- Head -->
+    <circle cx="0" cy="-60" r="30" fill="#6c757d" />
+    <!-- Body -->
+    <path d="M 0,-30 L 0,30 M -30,0 L 30,0" stroke="#6c757d" stroke-width="10" stroke-linecap="round" />
+    <!-- Arms -->
+    <path d="M -30,0 L -60,20 M 30,0 L 60,20" stroke="#6c757d" stroke-width="8" stroke-linecap="round" />
+    <!-- Legs -->
+    <path d="M 0,30 L -20,80 M 0,30 L 20,80" stroke="#6c757d" stroke-width="8" stroke-linecap="round" />
+  </g>
+  
+  <!-- Text -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1a1a2e" text-anchor="middle">Tim Profesional DISKOMINFO</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="16" fill="#495057" text-anchor="middle">Berpengalaman di bidang IT, komunikasi, dan pelayanan publik</text>
+  
+  <!-- Connection Lines -->
+  <path d="M 400,165 L 250,165 M 400,165 L 550,165 M 250,165 L 120,165 M 550,165 L 680,165" stroke="#dee2e6" stroke-width="2" stroke-dasharray="5,5" />
+</svg>

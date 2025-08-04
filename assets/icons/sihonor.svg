@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#1a1a2e" />
+  
+  <!-- Family Group Icon -->
+  <!-- Adult 1 (Left) -->
+  <g transform="translate(60, 100)">
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="12" fill="none" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Body -->
+    <path d="M 0,-18 L 0,15" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Arms -->
+    <path d="M 0,-10 L -12,5" stroke="#16a085" stroke-width="3" />
+    <path d="M 0,-10 L 12,5" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Legs -->
+    <path d="M 0,15 L -10,35" stroke="#16a085" stroke-width="3" />
+    <path d="M 0,15 L 10,35" stroke="#16a085" stroke-width="3" />
+  </g>
+  
+  <!-- Adult 2 (Right) -->
+  <g transform="translate(140, 100)">
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="12" fill="none" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Body -->
+    <path d="M 0,-18 L 0,15" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Arms -->
+    <path d="M 0,-10 L -12,5" stroke="#16a085" stroke-width="3" />
+    <path d="M 0,-10 L 12,5" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Legs -->
+    <path d="M 0,15 L -10,35" stroke="#16a085" stroke-width="3" />
+    <path d="M 0,15 L 10,35" stroke="#16a085" stroke-width="3" />
+  </g>
+  
+  <!-- Child 1 (Center) -->
+  <g transform="translate(100, 110) scale(0.8)">
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="12" fill="none" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Body -->
+    <path d="M 0,-18 L 0,15" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Arms -->
+    <path d="M 0,-10 L -12,5" stroke="#16a085" stroke-width="3" />
+    <path d="M 0,-10 L 12,5" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Legs -->
+    <path d="M 0,15 L -10,35" stroke="#16a085" stroke-width="3" />
+    <path d="M 0,15 L 10,35" stroke="#16a085" stroke-width="3" />
+  </g>
+  
+  <!-- Child 2 (Center-Left) -->
+  <g transform="translate(80, 110) scale(0.7)">
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="12" fill="none" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Body -->
+    <path d="M 0,-18 L 0,15" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Arms -->
+    <path d="M 0,-10 L -12,5" stroke="#16a085" stroke-width="3" />
+    <path d="M 0,-10 L 12,5" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Legs -->
+    <path d="M 0,15 L -10,35" stroke="#16a085" stroke-width="3" />
+    <path d="M 0,15 L 10,35" stroke="#16a085" stroke-width="3" />
+  </g>
+  
+  <!-- Child 3 (Center-Right) -->
+  <g transform="translate(120, 110) scale(0.7)">
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="12" fill="none" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Body -->
+    <path d="M 0,-18 L 0,15" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Arms -->
+    <path d="M 0,-10 L -12,5" stroke="#16a085" stroke-width="3" />
+    <path d="M 0,-10 L 12,5" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Legs -->
+    <path d="M 0,15 L -10,35" stroke="#16a085" stroke-width="3" />
+    <path d="M 0,15 L 10,35" stroke="#16a085" stroke-width="3" />
+  </g>
+  
+  <!-- Heart Above -->
+  <path d="M 100,50 C 90,40 70,40 70,60 C 70,80 100,85 100,85 C 100,85 130,80 130,60 C 130,40 110,40 100,50 Z" fill="#16a085" />
+  
+  <!-- Digital Elements -->
+  <circle cx="60" cy="50" r="3" fill="#ffffff" />
+  <circle cx="140" cy="50" r="3" fill="#ffffff" />
+  <circle cx="100" cy="30" r="3" fill="#ffffff" />
+  <circle cx="100" cy="150" r="3" fill="#ffffff" />
+</svg>

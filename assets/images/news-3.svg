@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa" />
+  
+  <!-- Grid Pattern -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e9ecef" stroke-width="1" />
+  </pattern>
+  <rect width="800" height="450" fill="url(#grid)" />
+  
+  <!-- Decorative Elements -->
+  <circle cx="650" cy="150" r="100" fill="#16a085" opacity="0.1" />
+  <circle cx="150" cy="300" r="120" fill="#1a1a2e" opacity="0.1" />
+  
+  <!-- DISKOMINFO SIAK Logo (Larger) -->
+  <g transform="translate(400, 180) scale(1.2)">
+    <!-- Background Circle -->
+    <circle cx="0" cy="0" r="90" fill="#1a1a2e" />
+    
+    <!-- Outer Ring -->
+    <circle cx="0" cy="0" r="85" fill="none" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Inner Elements - Digital/Tech Theme -->
+    <!-- Circuit Board Lines -->
+    <path d="M-60,0 L-30,0 M30,0 L60,0 M0,-60 L0,-30 M0,30 L0,60" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Connection Nodes -->
+    <circle cx="-30" cy="0" r="5" fill="#16a085" />
+    <circle cx="30" cy="0" r="5" fill="#16a085" />
+    <circle cx="0" cy="-30" r="5" fill="#16a085" />
+    <circle cx="0" cy="30" r="5" fill="#16a085" />
+    
+    <!-- Central Globe/Network Icon -->
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Latitude Lines -->
+    <ellipse cx="0" cy="0" rx="30" ry="10" fill="none" stroke="#16a085" stroke-width="1.5" />
+    <ellipse cx="0" cy="0" rx="30" ry="20" fill="none" stroke="#16a085" stroke-width="1.5" />
+    
+    <!-- Longitude Lines -->
+    <path d="M0,-30 C15,-15 15,15 0,30 C-15,15 -15,-15 0,-30" fill="none" stroke="#16a085" stroke-width="1.5" />
+    <path d="M-30,0 C-15,-15 15,-15 30,0 C15,15 -15,15 -30,0" fill="none" stroke="#16a085" stroke-width="1.5" />
+    
+    <!-- Digital Dots/Nodes -->
+    <circle cx="-10" cy="-10" r="2" fill="#ffffff" />
+    <circle cx="10" cy="-10" r="2" fill="#ffffff" />
+    <circle cx="-10" cy="10" r="2" fill="#ffffff" />
+    <circle cx="10" cy="10" r="2" fill="#ffffff" />
+    <circle cx="0" cy="-15" r="2" fill="#ffffff" />
+    <circle cx="0" cy="15" r="2" fill="#ffffff" />
+    <circle cx="-15" cy="0" r="2" fill="#ffffff" />
+    <circle cx="15" cy="0" r="2" fill="#ffffff" />
+  </g>
+  
+  <!-- Text Placeholder -->
+  <text x="400" y="320" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1a1a2e" text-anchor="middle">DISKOMINFO SIAK</text>
+  <text x="400" y="350" font-family="Arial, sans-serif" font-size="18" fill="#495057" text-anchor="middle">Melayani dengan Integritas dan Transparansi</text>
+  
+  <!-- Small DISKOMINFO Logo -->
+  <g transform="translate(50, 50) scale(0.3)">
+    <!-- Background Circle -->
+    <circle cx="100" cy="100" r="90" fill="#1a1a2e" />
+    
+    <!-- Outer Ring -->
+    <circle cx="100" cy="100" r="85" fill="none" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Central Globe/Network Icon -->
+    <circle cx="100" cy="100" r="30" fill="none" stroke="#16a085" stroke-width="3" />
+    
+    <!-- Latitude Lines -->
+    <ellipse cx="100" cy="100" rx="30" ry="10" fill="none" stroke="#16a085" stroke-width="1.5" />
+    <ellipse cx="100" cy="100" rx="30" ry="20" fill="none" stroke="#16a085" stroke-width="1.5" />
+    
+    <!-- Longitude Lines -->
+    <path d="M100,70 C115,85 115,115 100,130 C85,115 85,85 100,70" fill="none" stroke="#16a085" stroke-width="1.5" />
+    <path d="M70,100 C85,85 115,85 130,100 C115,115 85,115 70,100" fill="none" stroke="#16a085" stroke-width="1.5" />
+  </g>
+  
+  <!-- Date -->
+  <text x="50" y="400" font-family="Arial, sans-serif" font-size="16" fill="#6c757d">5 Juni 2025</text>
+</svg>

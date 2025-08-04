@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Berita - DISKOMINFO Kabupaten Siak</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+</head>
+<body class="font-primary">
+    <!-- Loading Animation -->
+    <div id="loader" class="fixed inset-0 z-50 flex items-center justify-center bg-white">
+        <div class="loading-animation">
+            <div class="spinner"></div>
+            <p class="mt-4 text-gray-600">Memuat...</p>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="assets/images/logo-new.png" alt="DISKOMINFO Siak Logo" class="h-12">
+                    <div class="hidden md:block">
+                        <h1 class="text-lg font-bold text-gray-800">DISKOMINFO</h1>
+                        <p class="text-xs text-gray-600">Kabupaten Siak</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Beranda</a>
+                    <a href="tentang.html" class="nav-link">Tentang Kami</a>
+                    <a href="berita.html" class="nav-link active">Berita</a>
+                    <a href="layanan.html" class="nav-link">Layanan</a>
+                    <a href="kontak.html" class="nav-link">Kontak</a>
+                    <a href="#" class="btn-primary">SiPeluk</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <!-- Theme Toggle Button -->
+                    <button id="theme-toggle" class="theme-toggle" title="Toggle Dark/Light Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden flex items-center" aria-label="Toggle Menu" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white absolute w-full left-0 shadow-md py-4 px-4 mt-1 z-50">
+            <div class="flex flex-col space-y-3">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="tentang.html" class="nav-link">Tentang Kami</a>
+                <a href="berita.html" class="nav-link active">Berita</a>
+                <a href="layanan.html" class="nav-link">Layanan</a>
+                <a href="kontak.html" class="nav-link">Kontak</a>
+                <a href="#" class="btn-primary inline-block text-center">SiPeluk</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="pt-32 pb-10 bg-gradient-to-r from-blue-900 to-teal-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center text-center">
+                <h1 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">DISKOMINFO Siak Luncurkan Aplikasi SiPeluk</h1>
+                <div class="flex items-center text-sm mb-6" data-aos="fade-up" data-aos-delay="100">
+                    <span class="mr-4"><i class="far fa-calendar-alt mr-2"></i>12 Mei 2025</span>
+                    <span class="mr-4"><i class="far fa-user mr-2"></i>Admin DISKOMINFO</span>
+                    <span><i class="far fa-folder mr-2"></i>Teknologi</span>
+                </div>
+                <nav class="text-sm breadcrumbs" data-aos="fade-up" data-aos-delay="200">
+                    <ol class="flex space-x-2">
+                        <li><a href="index.html" class="hover:text-teal-300">Beranda</a></li>
+                        <li><span class="mx-2">/</span></li>
+                        <li><a href="berita.html" class="hover:text-teal-300">Berita</a></li>
+                        <li><span class="mx-2">/</span></li>
+                        <li>Detail Berita</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- Article Content -->
+                <div class="lg:w-2/3" data-aos="fade-up">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+                        <img src="assets/images/news-1.svg" alt="DISKOMINFO Siak Luncurkan Aplikasi SiPeluk" class="w-full h-auto object-cover">
+                        
+                        <div class="p-6">
+                            <div class="prose max-w-none">
+                                <p class="lead text-lg mb-6">DISKOMINFO Kabupaten Siak dengan bangga mengumumkan peluncuran aplikasi terbaru bernama SiPeluk (Sistem Pelayanan Publik Kabupaten Siak) yang bertujuan untuk meningkatkan kualitas pelayanan publik di Kabupaten Siak.</p>
+                                
+                                <p>Pada acara peluncuran yang dihadiri oleh Bupati Siak dan jajaran pemerintah daerah, Kepala DISKOMINFO Kabupaten Siak menyampaikan bahwa aplikasi SiPeluk merupakan langkah strategis dalam mewujudkan Siak Smart City dan mendukung transformasi digital di lingkungan pemerintahan.</p>
+                                
+                                <h2 class="text-2xl font-bold mt-8 mb-4">Fitur Utama SiPeluk</h2>
+                                
+                                <p>Aplikasi SiPeluk hadir dengan berbagai fitur inovatif yang dirancang untuk memudahkan masyarakat dalam mengakses layanan publik, di antaranya:</p>
+                                
+                                <ul class="list-disc pl-6 my-4">
+                                    <li><strong>E-Serti:</strong> Layanan penerbitan sertifikat elektronik untuk berbagai keperluan administratif.</li>
+                                    <li><strong>SiMobil:</strong> Sistem pemesanan kendaraan dinas secara online.</li>
+                                    <li><strong>SiMari:</strong> Platform untuk mengajukan permohonan rapat dan penggunaan ruang pertemuan.</li>
+                                    <li><strong>Sihonor:</strong> Sistem pengelolaan honor dan insentif pegawai non-PNS.</li>
+                                    <li><strong>Simeting:</strong> Aplikasi penjadwalan dan manajemen rapat terintegrasi.</li>
+                                </ul>
+                                
+                                <p>"Kami berharap dengan adanya SiPeluk, pelayanan publik di Kabupaten Siak dapat berjalan lebih efisien, transparan, dan akuntabel," ujar Kepala DISKOMINFO Kabupaten Siak dalam sambutannya.</p>
+                                
+                                <h2 class="text-2xl font-bold mt-8 mb-4">Manfaat bagi Masyarakat</h2>
+                                
+                                <p>Dengan adanya aplikasi SiPeluk, masyarakat Kabupaten Siak akan merasakan berbagai manfaat, antara lain:</p>
+                                
+                                <ol class="list-decimal pl-6 my-4">
+                                    <li>Kemudahan akses layanan publik tanpa harus datang ke kantor pemerintahan.</li>
+                                    <li>Transparansi dalam proses pelayanan dan penggunaan anggaran.</li>
+                                    <li>Efisiensi waktu dalam pengurusan dokumen dan perizinan.</li>
+                                    <li>Kemudahan dalam melakukan pengaduan dan mendapatkan respons cepat.</li>
+                                    <li>Integrasi data yang memungkinkan pelayanan yang lebih personal dan tepat sasaran.</li>
+                                </ol>
+                                
+                                <blockquote class="border-l-4 border-teal-500 pl-4 italic my-6">
+                                    "SiPeluk adalah wujud komitmen kami dalam memberikan pelayanan terbaik bagi masyarakat Kabupaten Siak. Ini adalah langkah awal menuju Siak Smart City yang modern dan berdaya saing," - Bupati Siak.
+                                </blockquote>
+                                
+                                <h2 class="text-2xl font-bold mt-8 mb-4">Rencana Pengembangan</h2>
+                                
+                                <p>DISKOMINFO Kabupaten Siak juga menyampaikan rencana pengembangan SiPeluk di masa mendatang, yang meliputi:</p>
+                                
+                                <ul class="list-disc pl-6 my-4">
+                                    <li>Integrasi dengan sistem pembayaran elektronik.</li>
+                                    <li>Pengembangan fitur analitik data untuk pengambilan keputusan yang lebih baik.</li>
+                                    <li>Perluasan jangkauan layanan ke daerah-daerah terpencil.</li>
+                                    <li>Peningkatan keamanan data dan privasi pengguna.</li>
+                                </ul>
+                                
+                                <p>Aplikasi SiPeluk dapat diakses melalui website resmi DISKOMINFO Kabupaten Siak atau diunduh melalui Google Play Store dan App Store. Untuk informasi lebih lanjut, masyarakat dapat menghubungi hotline DISKOMINFO Kabupaten Siak atau mengunjungi kantor DISKOMINFO pada jam kerja.</p>
+                                
+                                <div class="flex items-center justify-between mt-10 pt-6 border-t border-gray-200">
+                                    <div class="flex space-x-4">
+                                        <span class="text-gray-600">Bagikan:</span>
+                                        <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="text-green-600 hover:text-green-800"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-telegram"></i></a>
+                                    </div>
+                                    <div>
+                                        <span class="text-gray-600">Tags:</span>
+                                        <a href="#" class="ml-2 text-sm bg-gray-200 text-gray-700 px-2 py-1 rounded hover:bg-gray-300">Aplikasi</a>
+                                        <a href="#" class="ml-2 text-sm bg-gray-200 text-gray-700 px-2 py-1 rounded hover:bg-gray-300">SiPeluk</a>
+                                        <a href="#" class="ml-2 text-sm bg-gray-200 text-gray-700 px-2 py-1 rounded hover:bg-gray-300">Smart City</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Author Info -->
+                    <div class="bg-white rounded-lg shadow-md p-6 mb-8" data-aos="fade-up">
+                        <div class="flex items-center">
+                            <div class="w-16 h-16 rounded-full bg-gray-300 flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-gray-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">Admin DISKOMINFO</h3>
+                                <p class="text-gray-600">Tim Humas DISKOMINFO Kabupaten Siak yang bertanggung jawab untuk menyampaikan informasi terkini seputar kegiatan dan program DISKOMINFO kepada masyarakat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Comments Section -->
+                    <div class="bg-white rounded-lg shadow-md p-6 mb-8" data-aos="fade-up">
+                        <h3 class="text-xl font-bold mb-6">Komentar (3)</h3>
+                        
+                        <!-- Comment 1 -->
+                        <div class="border-b border-gray-200 pb-6 mb-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center mr-4">
+                                    <i class="fas fa-user text-gray-600"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center mb-2">
+                                        <h4 class="font-semibold mr-2">Ahmad Fauzi</h4>
+                                        <span class="text-sm text-gray-500">12 Mei 2025, 14:30</span>
+                                    </div>
+                                    <p class="text-gray-700 mb-3">Aplikasi yang sangat bermanfaat! Saya sudah mencoba menggunakan E-Serti dan prosesnya sangat cepat. Terima kasih DISKOMINFO Siak atas inovasinya.</p>
+                                    <button class="text-teal-600 hover:text-teal-800 text-sm font-medium">Balas</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Comment 2 -->
+                        <div class="border-b border-gray-200 pb-6 mb-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center mr-4">
+                                    <i class="fas fa-user text-gray-600"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center mb-2">
+                                        <h4 class="font-semibold mr-2">Siti Nurhaliza</h4>
+                                        <span class="text-sm text-gray-500">12 Mei 2025, 15:45</span>
+                                    </div>
+                                    <p class="text-gray-700 mb-3">Apakah aplikasi ini juga bisa diakses oleh masyarakat yang tinggal di daerah terpencil? Bagaimana dengan mereka yang tidak memiliki akses internet yang baik?</p>
+                                    <button class="text-teal-600 hover:text-teal-800 text-sm font-medium">Balas</button>
+                                </div>
+                            </div>
+                            
+                            <!-- Reply to Comment 2 -->
+                            <div class="flex items-start mt-4 ml-16">
+                                <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center mr-4">
+                                    <i class="fas fa-user text-gray-600 text-sm"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center mb-2">
+                                        <h4 class="font-semibold mr-2">Admin DISKOMINFO</h4>
+                                        <span class="text-sm text-gray-500">12 Mei 2025, 16:20</span>
+                                    </div>
+                                    <p class="text-gray-700 mb-3">Terima kasih atas pertanyaannya, Ibu Siti. Kami sedang mengembangkan solusi offline yang dapat diakses di kantor desa terdekat untuk masyarakat yang memiliki keterbatasan akses internet. Selain itu, kami juga berencana untuk menyediakan kios layanan di beberapa titik strategis di Kabupaten Siak.</p>
+                                    <button class="text-teal-600 hover:text-teal-800 text-sm font-medium">Balas</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Comment 3 -->
+                        <div class="pb-2">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center mr-4">
+                                    <i class="fas fa-user text-gray-600"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center mb-2">
+                                        <h4 class="font-semibold mr-2">Budi Santoso</h4>
+                                        <span class="text-sm text-gray-500">13 Mei 2025, 09:15</span>
+                                    </div>
+                                    <p class="text-gray-700 mb-3">Semoga dengan adanya aplikasi ini, pelayanan publik di Kabupaten Siak bisa semakin baik. Yang penting juga adalah keamanan data pribadi masyarakat. Apakah DISKOMINFO sudah menerapkan standar keamanan yang tinggi untuk aplikasi ini?</p>
+                                    <button class="text-teal-600 hover:text-teal-800 text-sm font-medium">Balas</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Comment Form -->
+                    <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
+                        <h3 class="text-xl font-bold mb-6">Tinggalkan Komentar</h3>
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Nama</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="comment" class="block text-gray-700 mb-2">Komentar</label>
+                                <textarea id="comment" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+                            </div>
+                            <div class="flex items-center mb-6">
+                                <input type="checkbox" id="save-info" class="mr-2">
+                                <label for="save-info" class="text-gray-700">Simpan nama dan email saya untuk komentar berikutnya</label>
+                            </div>
+                            <button type="submit" class="btn-primary">Kirim Komentar</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="lg:w-1/3" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Search Box -->
+                    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                        <h3 class="text-xl font-bold mb-4">Pencarian</h3>
+                        <div class="relative">
+                            <input type="text" placeholder="Cari berita..." class="w-full px-4 py-2 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+                            <button class="absolute right-3 top-2.5 text-gray-500 hover:text-teal-600">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Categories -->
+                    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                        <h3 class="text-xl font-bold mb-4">Kategori</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-teal-600">
+                                    <span>Teknologi</span>
+                                    <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-xs">12</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-teal-600">
+                                    <span>Pengumuman</span>
+                                    <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-xs">8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-teal-600">
+                                    <span>Kegiatan</span>
+                                    <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-xs">15</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-teal-600">
+                                    <span>Layanan</span>
+                                    <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-xs">7</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center justify-between text-gray-700 hover:text-teal-600">
+                                    <span>Informasi</span>
+                                    <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-xs">10</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Recent Posts -->
+                    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                        <h3 class="text-xl font-bold mb-4">Berita Terbaru</h3>
+                        <div class="space-y-4">
+                            <!-- Recent Post 1 -->
+                            <div class="flex items-start">
+                                <img src="assets/images/news-1.svg" alt="Berita" class="w-20 h-20 object-cover rounded mr-4">
+                                <div>
+                                    <h4 class="font-semibold hover:text-teal-600"><a href="#">DISKOMINFO Siak Luncurkan Aplikasi SiPeluk</a></h4>
+                                    <p class="text-sm text-gray-500">12 Mei 2025</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Recent Post 2 -->
+                            <div class="flex items-start">
+                                <img src="assets/images/news-2.svg" alt="Berita" class="w-20 h-20 object-cover rounded mr-4">
+                                <div>
+                                    <h4 class="font-semibold hover:text-teal-600"><a href="#">Yakin Wi-Fi Gratis Itu Benar-Benar Gratis?</a></h4>
+                                    <p class="text-sm text-gray-500">10 Mei 2025</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Recent Post 3 -->
+                            <div class="flex items-start">
+                                <img src="assets/images/news-3.svg" alt="Berita" class="w-20 h-20 object-cover rounded mr-4">
+                                <div>
+                                    <h4 class="font-semibold hover:text-teal-600"><a href="#">DISKOMINFO Siak Melayani dengan Integritas</a></h4>
+                                    <p class="text-sm text-gray-500">5 Mei 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tags -->
+                    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                        <h3 class="text-xl font-bold mb-4">Tags</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <a href="#" class="text-sm bg-gray-200 text-gray-700 px-3 py-1 rounded-full hover:bg-teal-500 hover:text-white">Aplikasi</a>
+                            <a href="#" class="text-sm bg-gray-200 text-gray-700 px-3 py-1 rounded-full hover:bg-teal-500 hover:text-white">SiPeluk</a>
+                            <a href="#" class="text-sm bg-gray-200 text-gray-700 px-3 py-1 rounded-full hover:bg-teal-500 hover:text-white">Smart City</a>
+                            <a href="#" class="text-sm bg-gray-200 text-gray-700 px-3 py-1 rounded-full hover:bg-teal-500 hover:text-white">Teknologi</a>
+                            <a href="#" class="text-sm bg-gray-200 text-gray-700 px-3 py-1 rounded-full hover:bg-teal-500 hover:text-white">Digital</a>
+                            <a href="#" class="text-sm bg-gray-200 text-gray-700 px-3 py-1 rounded-full hover:bg-teal-500 hover:text-white">Pelayanan</a>
+                            <a href="#" class="text-sm bg-gray-200 text-gray-700 px-3 py-1 rounded-full hover:bg-teal-500 hover:text-white">Publik</a>
+                            <a href="#" class="text-sm bg-gray-200 text-gray-700 px-3 py-1 rounded-full hover:bg-teal-500 hover:text-white">Siak</a>
+                            <a href="#" class="text-sm bg-gray-200 text-gray-700 px-3 py-1 rounded-full hover:bg-teal-500 hover:text-white">E-Government</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter -->
+                    <div class="bg-gradient-to-r from-blue-900 to-teal-800 rounded-lg shadow-md p-6 text-white">
+                        <h3 class="text-xl font-bold mb-4">Berlangganan Newsletter</h3>
+                        <p class="mb-4">Dapatkan informasi terbaru dari DISKOMINFO Kabupaten Siak langsung ke email Anda.</p>
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" placeholder="Email Anda" class="w-full px-4 py-2 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                            </div>
+                            <button type="submit" class="w-full bg-white text-teal-800 font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition duration-300">Berlangganan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Related Posts -->
+            <div class="mt-12" data-aos="fade-up">
+                <h2 class="text-2xl font-bold mb-6">Berita Terkait</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Related Post 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="assets/images/news-2.svg" alt="Berita Terkait" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-2">
+                                <span class="mr-4"><i class="far fa-calendar-alt mr-1"></i>10 Mei 2025</span>
+                                <span><i class="far fa-folder mr-1"></i>Teknologi</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2"><a href="#" class="hover:text-teal-600">Yakin Wi-Fi Gratis Itu Benar-Benar Gratis?</a></h3>
+                            <p class="text-gray-600 mb-4">DISKOMINFO Siak memberikan edukasi tentang keamanan penggunaan Wi-Fi publik dan tips aman berinternet.</p>
+                            <a href="#" class="text-teal-600 hover:text-teal-800 font-medium">Baca Selengkapnya <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Related Post 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="assets/images/news-3.svg" alt="Berita Terkait" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-2">
+                                <span class="mr-4"><i class="far fa-calendar-alt mr-1"></i>5 Mei 2025</span>
+                                <span><i class="far fa-folder mr-1"></i>Layanan</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2"><a href="#" class="hover:text-teal-600">DISKOMINFO Siak Melayani dengan Integritas</a></h3>
+                            <p class="text-gray-600 mb-4">Komitmen DISKOMINFO Kabupaten Siak dalam memberikan pelayanan publik yang berintegritas dan transparan.</p>
+                            <a href="#" class="text-teal-600 hover:text-teal-800 font-medium">Baca Selengkapnya <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Related Post 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="assets/images/services.svg" alt="Berita Terkait" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-2">
+                                <span class="mr-4"><i class="far fa-calendar-alt mr-1"></i>1 Mei 2025</span>
+                                <span><i class="far fa-folder mr-1"></i>Pengumuman</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2"><a href="#" class="hover:text-teal-600">Jadwal Pelatihan Digital untuk ASN Kabupaten Siak</a></h3>
+                            <p class="text-gray-600 mb-4">DISKOMINFO Siak mengumumkan jadwal pelatihan digital untuk meningkatkan kompetensi ASN di era digital.</p>
+                            <a href="#" class="text-teal-600 hover:text-teal-800 font-medium">Baca Selengkapnya <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- About DISKOMINFO -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="assets/images/logo-new.png" alt="DISKOMINFO Siak Logo" class="h-12">
+                        <div>
+                            <h2 class="text-lg font-bold">DISKOMINFO</h2>
+                            <p class="text-sm text-gray-400">Kabupaten Siak</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Dinas Komunikasi dan Informatika Kabupaten Siak berkomitmen untuk memberikan layanan informasi dan komunikasi yang terbaik bagi masyarakat.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors duration-300">Beranda</a></li>
+                        <li><a href="tentang.html" class="text-gray-400 hover:text-white transition-colors duration-300">Tentang Kami</a></li>
+                        <li><a href="berita.html" class="text-gray-400 hover:text-white transition-colors duration-300">Berita</a></li>
+                        <li><a href="layanan.html" class="text-gray-400 hover:text-white transition-colors duration-300">Layanan</a></li>
+                        <li><a href="kontak.html" class="text-gray-400 hover:text-white transition-colors duration-300">Kontak</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">Layanan SiPeluk</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">E-Serti</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">SiMobil</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">SiMari</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Sihonor</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Simeting</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">Kontak Kami</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-teal-500"></i>
+                            <span class="text-gray-400">Jl. Sultan Syarif Kasim, Kompleks Perkantoran Tanjung Agung, Kabupaten Siak, Riau 28671</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-teal-500"></i>
+                            <span class="text-gray-400">(0764) 123456</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-teal-500"></i>
+                            <span class="text-gray-400">info@diskominfo.siakkab.go.id</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-3 text-teal-500"></i>
+                            <span class="text-gray-400">Senin - Jumat: 08.00 - 16.00 WIB</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2025 DISKOMINFO Kabupaten Siak. Hak Cipta Dilindungi.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-300">Kebijakan Privasi</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-300">Syarat & Ketentuan</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-300">Peta Situs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-teal-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg z-50 opacity-0 transition-opacity duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/theme-toggle.js"></script>
+</body>
+</html>

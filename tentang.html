@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISKOMINFO Kabupaten Siak - Tentang Kami</title>
+    <meta name="description" content="Tentang Dinas Komunikasi dan Informatika (DISKOMINFO) Kabupaten Siak - Visi, Misi, dan Tim Kami">
+    <meta property="og:title" content="Tentang DISKOMINFO Kabupaten Siak">
+    <meta property="og:description" content="Tentang Dinas Komunikasi dan Informatika (DISKOMINFO) Kabupaten Siak - Visi, Misi, dan Tim Kami">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--text-primary)',
+                        secondary: 'var(--accent-color)',
+                        light: 'var(--card-bg)'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="font-sans min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)]">
+    <!-- Navbar -->
+    <nav class="bg-[var(--navbar-bg)] backdrop-blur-sm fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="assets/images/logo-new.png" alt="Logo DISKOMINFO" class="h-10">
+                    <div>
+                        <h1 class="font-heading font-bold text-lg md:text-xl">DISKOMINFO</h1>
+                        <p class="text-xs text-gray-300">Kabupaten Siak</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">Beranda</a>
+                    <a href="layanan.html" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">Layanan</a>
+                    <a href="berita.html" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">Berita</a>
+                    <a href="tentang.html" class="text-[var(--text-primary)] font-medium hover:text-[var(--accent-color)] transition-colors">Tentang Kami</a>
+                    <a href="kontak.html" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">Kontak</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <!-- Theme Toggle Button -->
+                    <button id="theme-toggle" class="theme-toggle" title="Toggle Dark/Light Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-button" class="md:hidden text-[var(--text-primary)] focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pt-4 pb-2">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">Beranda</a>
+                    <a href="layanan.html" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">Layanan</a>
+                    <a href="berita.html" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">Berita</a>
+                    <a href="tentang.html" class="text-[var(--text-primary)] font-medium hover:text-[var(--accent-color)] transition-colors">Tentang Kami</a>
+                    <a href="kontak.html" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-12 md:pt-40 md:pb-16 relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center">
+                <h1 class="font-heading font-bold text-4xl md:text-5xl mb-4 text-[var(--text-primary)]" data-aos="fade-up">Tentang Kami</h1>
+                <p class="text-[var(--text-secondary)] max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Mengenal lebih dekat Dinas Komunikasi dan Informatika Kabupaten Siak</p>
+            </div>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-[var(--accent-color-light)] rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-1/3 right-1/3 w-96 h-96 bg-[var(--bg-primary)]/30 rounded-full filter blur-3xl"></div>
+        </div>
+    </section>
+
+    <!-- Office Building Section -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="bg-[var(--card-bg)] rounded-xl overflow-hidden" data-aos="fade-up">
+                <div class="relative h-80 md:h-96">
+                    <img src="assets/images/office.jpg" alt="Gedung Kantor DISKOMINFO" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                        <div class="p-6 md:p-8">
+                            <h2 class="font-heading font-bold text-2xl md:text-3xl text-[var(--text-primary)]">Kantor DISKOMINFO Kabupaten Siak</h2>
+                            <p class="text-[var(--text-secondary)] mt-2">Jl. Sultan Syarif Kasim, Kompleks Perkantoran Tanjung Agung, Kabupaten Siak, Riau</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="py-12 bg-[var(--section-bg-1)]">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Vision -->
+                <div class="bg-[var(--card-bg)] rounded-xl p-8 text-[var(--text-primary)]" data-aos="fade-right">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-[var(--accent-color-light)] w-14 h-14 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-eye text-[var(--accent-color)] text-2xl"></i>
+                        </div>
+                        <h2 class="font-heading font-bold text-2xl md:text-3xl">Visi</h2>
+                    </div>
+                    <p class="text-lg font-medium mb-4 text-[var(--text-primary)]">"Menjadi leading digital government di Indonesia"</p>
+                    <p class="text-[var(--text-secondary)]">Kami berkomitmen untuk menjadi pionir dalam transformasi digital pemerintahan di Indonesia, dengan menghadirkan layanan publik yang inovatif, efisien, dan transparan melalui pemanfaatan teknologi informasi dan komunikasi.</p>
+                </div>
+                
+                <!-- Mission -->
+                <div class="bg-[var(--card-bg)] rounded-xl p-8 text-[var(--text-primary)]" data-aos="fade-left">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-[var(--accent-color-light)] w-14 h-14 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-bullseye text-[var(--accent-color)] text-2xl"></i>
+                        </div>
+                        <h2 class="font-heading font-bold text-2xl md:text-3xl">Misi</h2>
+                    </div>
+                    <p class="text-lg font-medium mb-4 text-[var(--text-primary)]">"Memberikan pelayanan publik excellent melalui inovasi teknologi dan transformasi digital"</p>
+                    <ul class="text-[var(--text-secondary)] space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-[var(--accent-color)] mt-1 mr-3"></i>
+                            <span>Mengembangkan infrastruktur TIK yang handal dan terintegrasi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-[var(--accent-color)] mt-1 mr-3"></i>
+                            <span>Meningkatkan kualitas layanan publik berbasis digital</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-[var(--accent-color)] mt-1 mr-3"></i>
+                            <span>Membangun ekosistem digital yang inklusif dan berkelanjutan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-[var(--accent-color)] mt-1 mr-3"></i>
+                            <span>Mengembangkan SDM yang kompeten di bidang TIK</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="font-heading font-bold text-3xl md:text-4xl mb-4 text-[var(--text-primary)]">Tim Kami</h2>
+                <p class="text-[var(--text-secondary)] max-w-2xl mx-auto">Profesional berpengalaman di bidang IT, komunikasi, dan pelayanan publik</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-[var(--card-bg)] rounded-xl overflow-hidden transform transition-all hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-64 bg-gray-200">
+                        <img src="assets/images/team1.jpg" alt="Kepala Dinas" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 text-[var(--text-primary)]">
+                        <h3 class="font-heading font-semibold text-xl mb-1">Dr. Ahmad Fauzi, M.Kom</h3>
+                        <p class="text-[var(--accent-color)] font-medium mb-3">Kepala Dinas</p>
+                        <p class="text-[var(--text-secondary)] mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-[var(--card-bg)] rounded-xl overflow-hidden transform transition-all hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-64 bg-gray-200">
+                        <img src="assets/images/team2.jpg" alt="Sekretaris" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 text-[var(--text-primary)]">
+                        <h3 class="font-heading font-semibold text-xl mb-1">Hj. Siti Rahmah, S.Kom</h3>
+                        <p class="text-[var(--accent-color)] font-medium mb-3">Sekretaris</p>
+                        <p class="text-[var(--text-secondary)] mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="bg-[var(--card-bg)] rounded-xl overflow-hidden transform transition-all hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-64 bg-gray-200">
+                        <img src="assets/images/team3.jpg" alt="Kepala Bidang TIK" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 text-[var(--text-primary)]">
+                        <h3 class="font-heading font-semibold text-xl mb-1">Ir. Budi Santoso, M.T</h3>
+                        <p class="text-[var(--accent-color)] font-medium mb-3">Kepala Bidang TIK</p>
+                        <p class="text-[var(--text-secondary)] mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="#" class="bg-[var(--accent-color)] hover:bg-[var(--accent-color)]/90 text-white font-medium py-3 px-8 rounded-full inline-flex items-center transition-all transform hover:scale-105">
+                    <span>Profil Lengkap</span>
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-16 bg-[var(--section-bg-1)]">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Stat 1 -->
+                <div class="bg-[var(--card-bg)] rounded-xl p-6 text-center transform transition-all hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-[var(--accent-color-light)] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-[var(--accent-color)] text-2xl"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold text-[var(--text-primary)] mb-2">150<span class="text-[var(--accent-color)]">+</span></h3>
+                    <p class="text-[var(--text-secondary)] font-medium">Total Pegawai</p>
+                </div>
+                
+                <!-- Stat 2 -->
+                <div class="bg-[var(--card-bg)] rounded-xl p-6 text-center transform transition-all hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-[var(--accent-color-light)] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calendar-check text-[var(--accent-color)] text-2xl"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold text-[var(--text-primary)] mb-2">25<span class="text-[var(--accent-color)]">+</span></h3>
+                    <p class="text-[var(--text-secondary)] font-medium">Tahun Berpengalaman</p>
+                </div>
+                
+                <!-- Stat 3 -->
+                <div class="bg-[var(--card-bg)] rounded-xl p-6 text-center transform transition-all hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-[var(--accent-color-light)] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-laptop-code text-[var(--accent-color)] text-2xl"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold text-[var(--text-primary)] mb-2">150<span class="text-[var(--accent-color)]">+</span></h3>
+                    <p class="text-[var(--text-secondary)] font-medium">Aplikasi Dikembangkan</p>
+                </div>
+                
+                <!-- Stat 4 -->
+                <div class="bg-[var(--card-bg)] rounded-xl p-6 text-center transform transition-all hover:scale-105" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-[var(--accent-color-light)] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-trophy text-[var(--accent-color)] text-2xl"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold text-[var(--text-primary)] mb-2">150<span class="text-[var(--accent-color)]">+</span></h3>
+                    <p class="text-[var(--text-secondary)] font-medium">Penghargaan Diraih</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--footer-bg)] pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Column 1: About -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="assets/images/logo-new.png" alt="Logo DISKOMINFO" class="h-10">
+                        <div>
+                            <h3 class="font-heading font-bold text-lg text-[var(--footer-text)]">DISKOMINFO</h3>
+                            <p class="text-xs text-[var(--footer-text-secondary)]">Kabupaten Siak</p>
+                        </div>
+                    </div>
+                    <p class="text-[var(--footer-text-secondary)] mb-4">Dinas Komunikasi dan Informatika Kabupaten Siak berkomitmen untuk memberikan layanan terbaik dalam bidang komunikasi dan teknologi informasi.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="font-heading font-semibold text-lg mb-6 text-[var(--footer-text)]">Tautan Cepat</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] transition-colors">Beranda</a></li>
+                        <li><a href="layanan.html" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] transition-colors">Layanan</a></li>
+                        <li><a href="berita.html" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] transition-colors">Berita</a></li>
+                        <li><a href="tentang.html" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] transition-colors">Tentang Kami</a></li>
+                        <li><a href="kontak.html" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] transition-colors">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Services -->
+                <div>
+                    <h3 class="font-heading font-semibold text-lg mb-6 text-[var(--footer-text)]">Layanan</h3>
+                    <ul class="space-y-3">
+                        <li><a href="layanan.html" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] transition-colors">E-Serti</a></li>
+                        <li><a href="layanan.html" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] transition-colors">SiMobil</a></li>
+                        <li><a href="layanan.html" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] transition-colors">SiMari</a></li>
+                        <li><a href="layanan.html" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] transition-colors">Sihonor</a></li>
+                        <li><a href="layanan.html" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] transition-colors">Simeting</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Contact -->
+                <div>
+                    <h3 class="font-heading font-semibold text-lg mb-6 text-[var(--footer-text)]">Kontak Kami</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[var(--accent-color)] mt-1 mr-3"></i>
+                            <span class="text-[var(--footer-text-secondary)]">Jl. Sultan Syarif Kasim No.111, Kampung Dalam, Kec. Siak, Kabupaten Siak, Riau 28671</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-[var(--accent-color)] mr-3"></i>
+                            <span class="text-[var(--footer-text-secondary)]">(0764) 20059</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-[var(--accent-color)] mr-3"></i>
+                            <span class="text-[var(--footer-text-secondary)]">diskominfo@siakkab.go.id</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock text-[var(--accent-color)] mr-3"></i>
+                            <span class="text-[var(--footer-text-secondary)]">Senin - Jumat: 08.00 - 16.00 WIB</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-[var(--footer-border)] pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-[var(--footer-text-secondary)] text-sm mb-4 md:mb-0">&copy; 2025 DISKOMINFO Kabupaten Siak. Hak Cipta Dilindungi.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] text-sm transition-colors">Kebijakan Privasi</a>
+                        <a href="#" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] text-sm transition-colors">Syarat & Ketentuan</a>
+                        <a href="#" class="text-[var(--footer-text-secondary)] hover:text-[var(--accent-color)] text-sm transition-colors">Peta Situs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+        
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

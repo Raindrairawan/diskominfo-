@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background -->
+  <circle cx="32" cy="32" r="30" fill="#1a1a2e" />
+  
+  <!-- Outer Ring -->
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#16a085" stroke-width="2" />
+  
+  <!-- Central Globe/Network Icon -->
+  <circle cx="32" cy="32" r="15" fill="none" stroke="#16a085" stroke-width="2" />
+  
+  <!-- Latitude Lines -->
+  <ellipse cx="32" cy="32" rx="15" ry="5" fill="none" stroke="#16a085" stroke-width="1" />
+  <ellipse cx="32" cy="32" rx="15" ry="10" fill="none" stroke="#16a085" stroke-width="1" />
+  
+  <!-- Longitude Lines -->
+  <path d="M32,17 C39.5,24.5 39.5,39.5 32,47 C24.5,39.5 24.5,24.5 32,17" fill="none" stroke="#16a085" stroke-width="1" />
+  <path d="M17,32 C24.5,24.5 39.5,24.5 47,32 C39.5,39.5 24.5,39.5 17,32" fill="none" stroke="#16a085" stroke-width="1" />
+  
+  <!-- Digital Dots/Nodes -->
+  <circle cx="32" cy="25" r="1.5" fill="#ffffff" />
+  <circle cx="32" cy="39" r="1.5" fill="#ffffff" />
+  <circle cx="25" cy="32" r="1.5" fill="#ffffff" />
+  <circle cx="39" cy="32" r="1.5" fill="#ffffff" />
+</svg>
